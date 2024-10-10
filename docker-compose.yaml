@@ -1,0 +1,19 @@
+services:
+  cass-docker:
+    image: cassandra
+    environment:
+      - name=value
+      - CASSANDRA_USER=cassandra
+      - CASSANDRA_PASSWORD=admin123
+    volumes:
+      - "./ny_taxi_cassandra:/var/lib/cassandra:rw"
+    ports:
+      - "9042:9042"
+
+    
+
+
+
+
+
+
