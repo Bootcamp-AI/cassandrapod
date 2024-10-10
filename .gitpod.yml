@@ -1,7 +1,7 @@
 
 tasks:
   - init: |
-      docker-compose pull && pip install cassandra-driver
+      pip install cassandra-driver && docker-compose pull 
   - command: |
       docker-compose up
 
@@ -13,3 +13,6 @@ ports:
 vscode:
   extensions:
     - ms-python.python
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
