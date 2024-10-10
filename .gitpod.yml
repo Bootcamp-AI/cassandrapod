@@ -1,7 +1,7 @@
 
 tasks:
   - init: |
-      pip install cassandra-driver && docker-compose pull 
+      docker-compose pull && pip install cassandra-driver
   - command: |
       docker-compose up
 
