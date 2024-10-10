@@ -1,10 +1,18 @@
 
 tasks:
   - init: |
-      docker-compose pull
+      docker-compose pull && pip install cassandra-driver
   - command: |
       docker-compose up
 
 ports:
   - port: 9042
     onOpen: ignore
+
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
